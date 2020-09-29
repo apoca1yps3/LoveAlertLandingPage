@@ -10,11 +10,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="./css/all.css" rel="stylesheet"> <!--load all styles -->
+  <link href="SFProDisplay-Black.ttf" rel="stylesheet">
+  <link href="SFProDisplay-Regular.ttf" rel="stylesheet">
 
   
   <style>
      .item {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 2rem  !important;
      } 
     .nav-link {
         color: black;
@@ -37,26 +39,66 @@
       padding-right: 10rem;
       padding-top: 3rem;
     }
+    .content-area {
+      margin-top: 3rem;
+      padding: .5rem 1rem;
+    }
     @media screen and (max-width:1300px) {
       .cnt-padding {
         padding-left: 2rem;
         padding-right: 2rem;
       }
-    } 
+      .content-area {
+        padding: .5rem 1rem;
+      }
+    }
     @media screen and (max-width:1500px) {
       .cnt-padding {
         padding-left: 5rem;
         padding-right: 5rem;
       }
+      .content-area {
+        padding: .5rem 1rem;
+      }
+    .item {
+      padding: 0.5rem 1.1rem  !important;
+     }
     }
     @media screen and (max-width:720px) {
       .cnt-padding {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0rem;
+        padding-right: 0rem;
         padding-top: 1rem;
       }
+      .content-area {
+        margin-top: 2rem;
+        padding: .5rem 2rem;
+      }
     }
-    
+    @media screen and (max-height:719px) {
+      .image-responsive {
+        max-height: 450px;
+      }
+    } 
+    @media screen and (max-height:721px) {
+      .head1 {
+      font-size: 1.875rem;
+      padding-top: 3rem;
+      font-weight: 100px;
+      }
+      .para1 {
+      font-size: 1.8rem;
+      padding-top: 3rem;
+      }
+    }
+    .head1 {
+      padding-top: 3rem;
+      font-size: 4.5rem;
+    }
+    .para1 {
+      font-size: 1.8rem;
+      padding-top: 3rem;
+    }
   </style>
 </head>
 
@@ -71,25 +113,30 @@
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <div class="navbar-nav ml-auto">
-        <a href="#" class="nav-item nav-link item">About</a>
-        <a href="#" class="nav-item nav-link item">Services</a>
-        <a href="#" class="nav-item nav-link item">Work</a>
-        <a href="#" class="nav-item nav-link item">Team</a>
-        <a href="#" class="nav-item nav-link item">Contact</a>
+        <a href="#" class="item nav-item nav-link">About</a>
+        <a href="#" class="item nav-item nav-link">Services</a>
+        <a href="#" class="item nav-item nav-link">Work</a>
+        <a href="#" class="item nav-item nav-link">Team</a>
+        <a href="#" class="item nav-item nav-link">Contact</a>
     </div>
   </div>
-  </div>  
+  
 </nav>
+
+<div class="row content-area">
+  <div class="col-md-6 col-xs-12 col-sm-12 order-sm-first order-md-last order-xl-last order-lg-last order-xs-first">
+
+    <img class="img-fluid image-responsive" src="side-image.png">
+  </div>
+  <div class="col-md-6 col-xs-12 col-sm-12 order-sm-last order-md-first order-xl-first order-lg-first order-xs-last">
+    <h1 class="head1" style="font-size: 5.62vw;"><b>Digital Product Manager</b></h1>
+    <p class="para1" style="font-size: 4.92vw;">Create a unique illustration for a website, application, or presentation</p>
+  </div>
+ 
+</div>
 </div>
 
-<div class="container">
-  <h1 style="font-size: 4.5rem; font-weight: bolder;">Digital Product</h1>
-  <h1 style="font-size: 4.5rem; font-weight: bolder;"> Manager</h1>
-  
-  <div class="clearfix">
-    <img class="float-sm-right" src="side-image.png" alt = "main_picture" style="width: 617px; height: 603px;">
-    
-</div>
+
 
 
 </body>
